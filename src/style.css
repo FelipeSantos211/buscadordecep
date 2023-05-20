@@ -74,11 +74,11 @@ h1{
   }
 
   #text{
-    width: 140;
+    width: 180px;
     height: 40px;
   }
 
   li{
-    font-size: 20px;
+    font-size: 18px;
   }
 }
