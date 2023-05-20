@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Teste</title>
+</head>
+<body>
+    <main>
+        <h1>Buscar CEP</h1>
+        <form class="pegarinput">
+            <div class="btn">
+                <input type="text" id="text">
+            </div>
+            <div class="inputtext">
+                <input type="button" value="Buscar" onclick="pegarTexto()" id="btn">
+            </div>
+        </form>
+        <ul class="lista">
+            <li id="cep"></li>
+            <li id="bairro"></li>
+            <li id="cidade"></li>
+            <li id="estado"></li>
+        </ul>
+    </main>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
