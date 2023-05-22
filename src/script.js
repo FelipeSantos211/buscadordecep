@@ -3,7 +3,9 @@ const bairromostrar = document.getElementById('bairro');
 const cidademostrar = document.getElementById('cidade');
 const estadoomostrar = document.getElementById('estado');
 
-function pegarTexto() {
+function pegarTexto(event) {
+    event.preventDefault();
+
     let cep = document.getElementById('text').value;
     let url = `https://viacep.com.br/ws/${cep}/json/`;
     getCEP(url);

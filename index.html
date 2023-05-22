@@ -12,10 +12,10 @@
         <h1>Buscar CEP</h1>
         <form class="pegarinput">
             <div class="btn">
-                <input type="text" id="text">
+                <input type="text" id="text" onkeydown="if (event.key === 'Enter') pegarTexto(event);">
             </div>
             <div class="inputtext">
-                <input type="button" value="Buscar" onclick="pegarTexto()" id="btn">
+                <input type="button" value="Buscar" onclick="pegarTexto(event)" id="btn">
             </div>
         </form>
         <ul class="lista">
