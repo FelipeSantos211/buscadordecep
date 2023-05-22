@@ -37,7 +37,12 @@
   border-radius: 5px;
   background: rgb(176, 22, 190);
   color: white;
-  
+  transition: 0.8;
+  cursor: pointer;
+}
+
+#btn:hover{
+  background: rgb(143, 15, 155);
 }
 
 .lista{
@@ -74,7 +79,7 @@ h1{
   }
 
   #text{
-    width: 180px;
+    width: 250px;
     height: 40px;
   }
 
