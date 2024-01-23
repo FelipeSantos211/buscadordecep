@@ -2,6 +2,7 @@ const cepmostrar = document.getElementById('cep');
 const bairromostrar = document.getElementById('bairro');
 const cidademostrar = document.getElementById('cidade');
 const estadoomostrar = document.getElementById('estado');
+const ruamostrar = document.getElementById('rua')
 
 function pegarTexto(event) {
     event.preventDefault();
@@ -24,11 +25,13 @@ function showContent(cep) {
     console.log(cep.bairro);
     console.log(cep.localidade);
     console.log(cep.uf);
+    console.log(cep.logradouro);
 
     cepmostrar.innerHTML = cep.cep;
     bairromostrar.innerHTML = cep.bairro;
     cidademostrar.innerHTML = cep.localidade;
     estadoomostrar.innerHTML = cep.uf
+    ruamostrar.innerHTML = cep.logradouro == '' ? "Sem endereço" : cep.logradouro; 
 }
 
 function showError() {
@@ -38,5 +41,5 @@ function showError() {
     bairromostrar.innerHTML = '';
     cidademostrar.innerHTML = '';
     estadoomostrar.innerHTML = '';
-
+    ruamostrar. innerHTML = '';
 }
