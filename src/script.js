@@ -42,4 +42,5 @@ function showError() {
     cidademostrar.innerHTML = '';
     estadoomostrar.innerHTML = '';
     ruamostrar. innerHTML = '';
+    
 }
